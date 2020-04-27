@@ -6,21 +6,27 @@
     <title>JPN GEEKS QUILLA|</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="author" content="Melissa Jiménez"><!--se dice de quien es la pagina, su creador-->
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/styles.css'>
+    <script>         
+    function setTheme(theme) {    
+        document.body.className = theme;
+    }     
+    </script>
+
 
 </head>
-<body>
+<body class="light">
     <section class="sticky">
         <ul class="navegacion">
             <li>Home<a href=""></a></li>
             <li>Contact us<a href=""></a></li>
             <li>About us<a href=""></a></li>
-            <li><button type="button">Light Theme</button></li>
-            <li><button type="button"> Dark Theme ;) </button></li>
+            <li><button onclick="setTheme('light')">Light Theme</button></li>
+            <li><button onclick="setTheme('dark')"> Dark Theme ;) </button></li>
         </ul>
     </section>
     <header class="cabeza flex">

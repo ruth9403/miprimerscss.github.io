@@ -1,16 +1,14 @@
-@import url("http://fonts.googleapis.com/css?family=Droid Sans");
-.navegacion {
-  display: flex;
-}
-
 body {
   margin: 0;
-  background-color: #f4eeff;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious-white.png);
-  transition: 0.5;
+  transition: 0.5s;
 }
 
-.navegacion {
+body.light {
+  background-color: #f4eeff;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious-white.png");
+  color: #424874;
+}
+body.light .navegacion {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -21,21 +19,15 @@ body {
   font-family: "paraiso", sans-serif;
   font-size: 1.5em;
 }
-.navegacion button {
+body.light .navegacion button {
   font-size: 0.9em;
   color: #424874;
 }
-
-ul li {
+body.light ul li {
   box-sizing: border-box;
   padding-bottom: 0;
 }
-
-.flex {
-  display: flex;
-}
-
-.cabeza {
+body.light .cabeza {
   display: flex;
   justify-content: center;
   flex-flow: column-reverse;
@@ -44,28 +36,25 @@ ul li {
   font-family: "paraiso", sans-serif;
   font-size: 1.5em;
 }
-.cabeza img {
+body.light .cabeza img {
   height: 30em;
 }
-.cabeza div {
+body.light .cabeza div {
   z-index: 3;
   position: absolute;
   top: 20em;
-  background-color: #ce0707;
-  opacity: 0.6;
-  /* Opacidad 60% */
+  background-color: rgba(58, 2, 2, 0.6);
 }
-.cabeza div h1 {
+body.light .cabeza div h1 {
   color: #1b262c;
   text-align: center;
   z-index: 4;
 }
-.cabeza div p {
+body.light .cabeza div p {
   color: #1b262c;
   text-align: center;
 }
-
-#jpnquilla {
+body.light #jpnquilla {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -77,29 +66,107 @@ ul li {
   opacity: 0.7;
   /* Opacidad 60% */
 }
-#jpnquilla .button {
+body.light #jpnquilla .button {
   position: absolute;
   top: 15em;
 }
-#jpnquilla div {
+body.light #jpnquilla div {
   margin-left: 3em;
   margin-right: 3em;
   font-family: "paraiso", sans-serif;
   font-size: 1.5em;
   font-size: 1em;
 }
-#jpnquilla div h3 {
+body.light #jpnquilla div h3 {
   margin-bottom: 0px;
   padding-bottom: 0;
   max-width: 16em;
 }
-#jpnquilla div textarea {
+body.light #jpnquilla div textarea {
   height: 4em;
 }
 
-body {
-  margin: 0;
-  transition: 0.5;
+body.dark {
+  background-color: #161518;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious.png");
+  color: #efefef;
+}
+body.dark .navegacion {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #ce0707;
+  /* #757575 */
+  padding: 0.5em;
+  height: 1.5em;
+  font-family: "paraiso", sans-serif;
+  font-size: 1.5em;
+}
+body.dark .navegacion button {
+  font-size: 0.9em;
+  color: #424874;
+}
+body.dark ul li {
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+body.dark .cabeza {
+  display: flex;
+  justify-content: center;
+  flex-flow: column-reverse;
+  margin: 1em;
+  position: relative;
+  font-family: "paraiso", sans-serif;
+  font-size: 1.5em;
+}
+body.dark .cabeza img {
+  height: 30em;
+}
+body.dark .cabeza div {
+  z-index: 3;
+  position: absolute;
+  top: 20em;
+  background-color: rgba(58, 2, 2, 0.6);
+}
+body.dark .cabeza div h1 {
+  color: #1b262c;
+  text-align: center;
+  z-index: 4;
+}
+body.dark .cabeza div p {
+  color: #1b262c;
+  text-align: center;
+}
+body.dark #jpnquilla {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  position: relative;
+  height: 17em;
+  margin: 1.5em;
+  border-style: dashed;
+  border-color: #ce0707;
+  opacity: 0.7;
+  /* Opacidad 60% */
+}
+body.dark #jpnquilla .button {
+  position: absolute;
+  top: 15em;
+}
+body.dark #jpnquilla div {
+  margin-left: 3em;
+  margin-right: 3em;
+  font-family: "paraiso", sans-serif;
+  font-size: 1.5em;
+  font-size: 1em;
+}
+body.dark #jpnquilla div h3 {
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  max-width: 16em;
+}
+body.dark #jpnquilla div textarea {
+  height: 4em;
 }
 
 /*# sourceMappingURL=styles.css.map */

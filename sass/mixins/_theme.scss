@@ -1,0 +1,88 @@
+@mixin fontfasizetitulo {
+    font-family: 'paraiso', sans-serif;
+    font-size: 1.5em;
+}
+
+@mixin theme ($name, $background-imagen, $background-color, $text-color){
+    $rojitochevere: #ce0707;
+    body.#{$name}{
+        background-color: $background-color;
+        background-image: url($background-imagen);
+        color: $text-color;
+        .navegacion{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            background-color: $rojitochevere;/* #757575 */
+            padding: 0.5em;
+            height: 1.5em;
+            @include fontfasizetitulo();
+            & button {
+                font-size: 0.9em;
+                color:#424874 ;
+            }
+        }
+        ul li{
+            box-sizing: border-box;
+            padding-bottom: 0;
+            
+        }
+        
+        .cabeza {
+            display: flex;
+            justify-content: center;
+            flex-flow: column-reverse;
+            margin: 1em;
+            position: relative;
+            @include fontfasizetitulo();
+            & img {
+                height: 30em;
+            }
+            & div{
+                z-index: 3;
+                position: absolute; 
+                top: 20em;
+                background-color: rgba(darken($rojitochevere,30%), 0.6);
+                & h1{
+                    color:#1b262c;
+                    text-align: center;
+                    z-index: 4;
+                }
+                & p {
+                    color:#1b262c;
+                    text-align: center;
+                }
+            }
+        }
+        #jpnquilla {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            position: relative;
+            height: 17em;
+            margin: 1.5em;
+            border-style: dashed;
+            border-color: rgb(206, 7, 7);
+            opacity:0.7; /* Opacidad 60% */
+            .button{
+                position: absolute;
+                top: 15em;
+            }
+            & div{
+                margin-left: 3em;
+                margin-right: 3em;
+                @include fontfasizetitulo();
+                font-size: 1em;
+                & h3{
+                    margin-bottom: 0px;
+                    padding-bottom: 0;
+                    max-width: 16em;
+                }
+                & textarea{
+                    height: 4em;
+                }
+            }
+        }
+    }
+
+}
