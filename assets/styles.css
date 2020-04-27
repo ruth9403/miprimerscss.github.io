@@ -6,7 +6,7 @@ body {
 body.light {
   background-color: #f4eeff;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious-white.png");
-  color: #424874;
+  color: #0b0b12;
 }
 body.light .navegacion {
   display: flex;
@@ -46,12 +46,12 @@ body.light .cabeza div {
   background-color: rgba(58, 2, 2, 0.6);
 }
 body.light .cabeza div h1 {
-  color: #1b262c;
+  color: #0b0b12;
   text-align: center;
   z-index: 4;
 }
 body.light .cabeza div p {
-  color: #1b262c;
+  color: #0b0b12;
   text-align: center;
 }
 body.light #jpnquilla {
@@ -63,8 +63,7 @@ body.light #jpnquilla {
   margin: 1.5em;
   border-style: dashed;
   border-color: #ce0707;
-  opacity: 0.7;
-  /* Opacidad 60% */
+  /*opacity:0.7; /* Opacidad 60% */
 }
 body.light #jpnquilla .button {
   position: absolute;
@@ -129,12 +128,12 @@ body.dark .cabeza div {
   background-color: rgba(58, 2, 2, 0.6);
 }
 body.dark .cabeza div h1 {
-  color: #1b262c;
+  color: #efefef;
   text-align: center;
   z-index: 4;
 }
 body.dark .cabeza div p {
-  color: #1b262c;
+  color: #efefef;
   text-align: center;
 }
 body.dark #jpnquilla {
@@ -146,8 +145,7 @@ body.dark #jpnquilla {
   margin: 1.5em;
   border-style: dashed;
   border-color: #ce0707;
-  opacity: 0.7;
-  /* Opacidad 60% */
+  /*opacity:0.7; /* Opacidad 60% */
 }
 body.dark #jpnquilla .button {
   position: absolute;

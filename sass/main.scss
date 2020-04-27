@@ -6,6 +6,6 @@ body {
     transition: .5s;
 }
 
-@include theme('light', 'https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious-white.png', #f4eeff,#424874);
+@include theme('light', 'https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious-white.png', #f4eeff, darken(#424874,30%));
 @include theme('dark', 'https://www.toptal.com/designers/subtlepatterns/patterns/y-so-serious.png', #161518, #efefef);
 //@include theme('dark');
